@@ -6,8 +6,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<style>
 		body{
-			background-color:#000;
-			color:#fff;
+			background-color:#fff;
+			color:#000;
 			margin-top:10px;
 		}
 	</style>
@@ -19,5 +19,14 @@
         <p>There is a HTML canvas below, let scribble on it.</p>
 	</div>
     <canvas id="canvas"></canvas>
+
+    <script>
+
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.rect(20, 20, 150, 100);
+	ctx.stroke();
+
+	</script>
 </body>
 </html>
